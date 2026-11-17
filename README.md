@@ -1,18 +1,23 @@
 # Meridian Portfolio Stability Decision
 
-This Project 2 app helps the Meridian Foundation Reserve CIO evaluate a long-only portfolio that meets a 6.5% annual expected-return objective while maintaining at least 3% in reserve-eligible Treasury assets. It selects the lowest-volatility allocation among portfolios tested in 5-percentage-point increments.
+This Project 2 app helps the Meridian Foundation Reserve CIO compare two transparent baselines with a constrained, long-only portfolio. It tests a 6.5% annual expected-return objective, a 3% reserve-eligible Treasury minimum, and a provisional 10% annual-volatility limit. The proposed portfolio is the lowest-volatility mix among allocations tested in 5-percentage-point increments.
 
 **Decision:** Pilot rather than adopt. The recommended allocation changes when the return assumptions and the historical sample change. Adopt only after validating the return assumptions and explaining the large allocation change between the full sample and the most recent 36 months.
 
 ## Run the app
 
-From this folder, run:
+Clone the repository and enter its folder first. Then run the app:
 
 ```powershell
-py -m pip install streamlit; py -m streamlit run ".\lab13 files\app.py"
+git clone https://github.com/Loganritter1/Project-2.git
+cd Project-2
+python -m pip install streamlit
+python -m streamlit run ".\lab13 files\app.py"
 ```
 
-The browser app opens automatically. The result appears under **Lowest-risk mix with your current edits**. Use the sidebar controls or upload `lab13 files/prices.csv` to test a changed input. The adjacent **Answer for inputs as loaded** panel is the comparison result.
+If you have already cloned the repository, skip the first two commands and make sure your PowerShell prompt ends in `Project-2>` (or the local folder name you chose) before running the last two commands. In this course workspace, the equivalent first step is `cd ".\Project 2"`.
+
+The browser app opens automatically. Under **Portfolio comparison**, it shows the equal-weight baseline, inverse-volatility baseline, and proposed constrained portfolio. Each has an explicit pass/fail mandate verdict. Use an expected-return control under **Editable inputs** to test a changed input.
 
 ## Read the result without running code
 
