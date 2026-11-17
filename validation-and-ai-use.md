@@ -21,8 +21,8 @@ Stop the process and do not recommend an allocation if no long-only portfolio ca
 - **Old value:** 10.87% per year.
 - **New value:** 8.0% per year.
 - **Prediction:** Lowering ACWI's expected return from 10.87% to 8.0% will require more ACWI in the constrained mix to reach the 6.5% return objective. I expect annual portfolio volatility to increase. The recommendation may change from pilot to stop/reject if the increased volatility exceeds the 10.0% provisional limit.
-- **Prediction written on:** 11/17/2026, 1:45PM
-- **Pre-run commit and GitHub link:** https://github.com/Loganritter1/Project-2/blob/main/validation-and-ai-use.md
+- **Prediction written on:** 11/17/2026, 4:00PM
+- **Pre-run commit and GitHub link:** 
 
 ### Post-run result — complete only after the pre-run commit
 
