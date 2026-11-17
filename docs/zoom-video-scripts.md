@@ -15,7 +15,7 @@ Do not read every document word-for-word. Explain the decision, show the evidenc
 
 ## Video 1: System and thinking changed
 
-**Target length:** 2:30 to 2:50.  
+**Target length:** 2:30 to 2:50.
 **Share:** `docs/validation-and-ai-use.md`, `docs/data-card.md`, and `output/visible-output.md`.
 
 ### Script
@@ -54,7 +54,7 @@ Show `docs/data-card.md`, then the window-stress row in the validation record.
 
 ## Video 2: Code walkthrough
 
-**Target length:** 4:00 to 4:40.  
+**Target length:** 4:00 to 4:40.
 **Share:** repository folder/VS Code, terminal, and `output/visible-output.md`.
 
 ### Script
@@ -103,7 +103,7 @@ Run `python run_validation.py` and show `output/visible-output.md`.
 
 ## Video 3: Committee presentation
 
-**Target length:** 3:30 to 4:30.  
+**Target length:** 3:30 to 4:30.
 **Share:** Start with the live Streamlit app. Then show `docs/decision-memo.md` and `output/visible-output.md`.
 
 ### Script
