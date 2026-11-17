@@ -4,7 +4,7 @@
 
 ## Decision and committee ask
 
-**Recommendation: approve a non-funded pilot; do not adopt the allocation process for live capital yet.** The committee should authorize validation of the constrained lowest-volatility method, not a permanent allocation. For the analytical pilot, examine the 35% to 65% ACWI range paired with the remaining balance in SGOV; this is a sensitivity range, not a funded mandate.
+**Recommendation: approve a non-funded pilot; do not adopt the allocation process for live capital yet.** The intended user is the Meridian Foundation Reserve CIO, operating under the Lab 13 seven-year horizon and annual-rebalancing convention. The committee should authorize validation of the constrained lowest-volatility method, not a permanent allocation. For the analytical pilot, examine the 35% to 65% ACWI range paired with the remaining balance in SGOV; this is a sensitivity range, not a funded mandate.
 
 ## Evidence and current result
 

@@ -2,7 +2,7 @@
 
 **AI use:** OpenAI Codex (GPT-5) assisted with explaining requirements, planning the app, improving the Streamlit code, and improving presentation. **Authorship and boundary:** I reviewed the code and calculations, selected the inputs and process, and remain responsible for the analysis and decision. This analysis is for education only and is not investment advice.
 
-This Project 2 app helps the Meridian Foundation Reserve CIO compare two transparent baselines with a constrained, long-only portfolio. It tests a 6.5% annual expected-return objective, a 3% reserve-eligible Treasury minimum, and a provisional 10% annual-volatility limit. The proposed portfolio is the lowest-volatility mix among allocations tested in 5-percentage-point increments.
+This Project 2 app helps the Meridian Foundation Reserve CIO compare two transparent baselines with a constrained, long-only portfolio over the Lab 13 seven-year horizon and annual-rebalancing convention. It tests a 6.5% annual expected-return objective, a 3% reserve-eligible Treasury minimum, and a provisional 10% annual-volatility limit. The proposed portfolio is the lowest-volatility mix among allocations tested in 5-percentage-point increments.
 
 **Decision:** Pilot rather than adopt. The recommended allocation changes when the return assumptions and the historical sample change. Adopt only after validating the return assumptions and explaining the large allocation change between the full sample and the most recent 36 months.
 

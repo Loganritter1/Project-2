@@ -11,6 +11,7 @@ sys.path.insert(0, str(SOURCE_DIR))
 from portfolio import (  # noqa: E402
     CORRELATIONS,
     SLEEVES,
+    covariance_matrix,
     estimate_from_prices,
     expected_return,
     lowest_risk_mix,
@@ -20,6 +21,14 @@ from portfolio import (  # noqa: E402
 
 
 class PortfolioEngineTests(unittest.TestCase):
+    def test_known_training_covariance_cell(self):
+        covariance = covariance_matrix(SLEEVES, CORRELATIONS)
+        # 0.80 correlation x 7.0% x 6.0% = 0.00336.
+        self.assertAlmostEqual(
+            covariance["Treasury 10-year note"]["Investment-grade bond fund"],
+            0.00336,
+        )
+
     def test_equal_grid_weights_sum_to_one(self):
         weights = lowest_risk_mix(SLEEVES, CORRELATIONS, 0.065, 0.03)
         self.assertAlmostEqual(sum(weights.values()), 1.0)

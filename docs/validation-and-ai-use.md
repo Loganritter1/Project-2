@@ -20,10 +20,18 @@ The point-in-time input is a trailing historical-return signal, not a forward-lo
 | Full-history result from committed price data | 60% SGOV / 40% ACWI; 6.61% estimated return; 5.99% annual volatility; 60% reserve-eligible. | The constrained portfolio meets the currently tested return, reserve, volatility, and long-only rules. |
 | Transparent baselines | Equal-weight and inverse-volatility portfolios are displayed beside the constrained portfolio, each with a rule-by-rule pass/fail verdict. | The proposed process can be compared to two reproducible alternatives. |
 | Input validation | `portfolio.py` rejects correlation values outside -1 to 1 and non-symmetric correlation tables; it also checks price-file completeness and positive prices. | Invalid inputs should stop calculation rather than silently produce a result. |
+| Known-answer reconciliation | The course training covariance for Treasury 10-year notes and investment-grade bonds is `0.80 x 0.07 x 0.06 = 0.00336`. | The automated known-answer test reproduces 0.00336 from the displayed correlation and volatility inputs. |
 | Estimate stress | With the training assumption for global equity return reduced from 8.0% to 7.0%, the lowest-risk mix changed from 0/20/25/55 to 0/10/10/80, and volatility rose from 9.44% to 12.94%. | Small return-estimate changes can materially change the selected mix and can breach the provisional risk limit. |
 | Window stress | The committed five-year result is 60% SGOV / 40% ACWI; the last-36-month result is 85% SGOV / 15% ACWI. | The 25-percentage-point allocation change supports a pilot rather than immediate adoption. |
 | Cost stress | A 50-basis-point annual cost drag raises the gross return hurdle to 7.0%. The lowest-risk mix becomes 50% SGOV / 50% ACWI, with 7.32% gross return, 6.82% net return, and 7.45% volatility. | A live allocation requires costs to be modelled and approved rather than assumed away. |
 | Constraint stress | Raising the reserve minimum from 3% to 70% produces no feasible long-only mix that reaches the 6.5% objective. | The process stops rather than presenting an ineligible allocation. |
+| Fresh-clone check | A fresh GitHub clone at commit `20e82e0` passed dependency verification, all seven tests, and the validation runner. | A clean user can reproduce the visible result without manual repair. |
+
+## AI-output check
+
+| AI-assisted claim considered | Independent check | Disposition | Effect on decision |
+|---|---|---|---|
+| An invalid correlation table should stop the portfolio calculation rather than create a covariance matrix silently. | `tests/test_portfolio.py` changes one correlation-table cell so the table is asymmetric and confirms `ValueError`; the known-answer covariance-cell test separately confirms the valid calculation. | Accepted only after the tests passed. | Supports the reliability of the calculation gate, but does not validate the return forecasts or justify adoption. |
 
 ## Limitations, stress boundary, and process stop
 
