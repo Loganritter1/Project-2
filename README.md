@@ -12,7 +12,7 @@ Clone the repository and enter its folder first. Then run the app:
 git clone https://github.com/Loganritter1/Project-2.git
 cd Project-2
 python -m pip install streamlit
-python -m streamlit run ".\lab13 files\app.py"
+python -m streamlit run "lab13 files/app.py"
 ```
 
 If you have already cloned the repository, skip the first two commands and make sure your PowerShell prompt ends in `Project-2>` (or the local folder name you chose) before running the last two commands. In this course workspace, the equivalent first step is `cd ".\Project 2"`.
