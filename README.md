@@ -1,5 +1,7 @@
 # Meridian Portfolio Stability Decision
 
+**AI use:** OpenAI Codex (GPT-5) assisted with explaining requirements, planning the app, improving the Streamlit code, and improving presentation. **Authorship and boundary:** I reviewed the code and calculations, selected the inputs and process, and remain responsible for the analysis and decision. This analysis is for education only and is not investment advice.
+
 This Project 2 app helps the Meridian Foundation Reserve CIO compare two transparent baselines with a constrained, long-only portfolio. It tests a 6.5% annual expected-return objective, a 3% reserve-eligible Treasury minimum, and a provisional 10% annual-volatility limit. The proposed portfolio is the lowest-volatility mix among allocations tested in 5-percentage-point increments.
 
 **Decision:** Pilot rather than adopt. The recommended allocation changes when the return assumptions and the historical sample change. Adopt only after validating the return assumptions and explaining the large allocation change between the full sample and the most recent 36 months.
@@ -11,13 +13,24 @@ Clone the repository and enter its folder first. Then run the app:
 ```powershell
 git clone https://github.com/Loganritter1/Project-2.git
 cd Project-2
-python -m pip install streamlit
+python -m pip install -r requirements.txt
 python -m streamlit run "lab13 files/app.py"
 ```
 
 If you have already cloned the repository, skip the first two commands and make sure your PowerShell prompt ends in `Project-2>` (or the local folder name you chose) before running the last two commands. In this course workspace, the equivalent first step is `cd ".\Project 2"`.
 
 The browser app opens automatically. Under **Portfolio comparison**, it shows the equal-weight baseline, inverse-volatility baseline, and proposed constrained portfolio. Each has an explicit pass/fail mandate verdict. Use an expected-return control under **Editable inputs** to test a changed input.
+
+## Verify the submission
+
+Run the automated checks and regenerate the committed visible output:
+
+```powershell
+python -m unittest discover -s tests -v
+python run_validation.py
+```
+
+The readable output is in [output/visible-output.md](output/visible-output.md), and the machine-readable result is in `output/validation-results.json`.
 
 ## Read the result without running code
 
@@ -31,6 +44,10 @@ The committed result, stress test, data sources, and decision rationale are in [
 - `lab13 files/download_yahoo_prices.py` - data-download helper.
 - `lab13 files/lab15.md` - visible results, stress tests, source links, and the final decision rationale.
 - `lab13 files/mandate.py` and `lab13 files/lab13.md` - the earlier coded mandate rules and their documentation.
+- `run_validation.py` - reproducible base, changed-input, cost, and constraint stress runs.
+- `tests/test_portfolio.py` - six regression tests for calculation, validation, and stop behavior.
+- `docs/decision-memo.md` - committee decision memo.
+- `docs/validation-and-ai-use.md` - validation record, AI disclosure, and Locked Changed-Input Record.
 
 ## Input and decision boundary
 

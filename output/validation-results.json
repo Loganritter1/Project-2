@@ -1,0 +1,72 @@
+{
+  "as_of": "2026-10-22 download; monthly price history through 2026-10",
+  "decision": "Pilot, not adopt",
+  "base_case": {
+    "weights": {
+      "SGOV": 0.6,
+      "VGIT": 0.0,
+      "VCIT": 0.0,
+      "ACWI": 0.4
+    },
+    "gross_expected_return": 0.066055,
+    "annual_cost_drag": 0.0,
+    "net_expected_return": 0.066055,
+    "annual_volatility": 0.059864,
+    "reserve_eligible_weight": 0.6
+  },
+  "locked_changed_input": {
+    "input": "ACWI expected annual return estimate",
+    "old_value": 0.108685,
+    "new_value": 0.08,
+    "before": {
+      "weights": {
+        "SGOV": 0.6,
+        "VGIT": 0.0,
+        "VCIT": 0.0,
+        "ACWI": 0.4
+      },
+      "gross_expected_return": 0.066055,
+      "annual_cost_drag": 0.0,
+      "net_expected_return": 0.066055,
+      "annual_volatility": 0.059864,
+      "reserve_eligible_weight": 0.6
+    },
+    "after": {
+      "weights": {
+        "SGOV": 0.35,
+        "VGIT": 0.0,
+        "VCIT": 0.0,
+        "ACWI": 0.65
+      },
+      "gross_expected_return": 0.065172,
+      "annual_cost_drag": 0.0,
+      "net_expected_return": 0.065172,
+      "annual_volatility": 0.096464,
+      "reserve_eligible_weight": 0.35
+    },
+    "volatility_limit": 0.1,
+    "recommendation": "Pilot remains appropriate; the changed mix remains below the provisional volatility limit."
+  },
+  "cost_stress": {
+    "annual_cost_drag": 0.005,
+    "method": "Raise the required gross return by the assumed annual cost drag, then report net return after the drag.",
+    "result": {
+      "weights": {
+        "SGOV": 0.5,
+        "VGIT": 0.0,
+        "VCIT": 0.0,
+        "ACWI": 0.5
+      },
+      "gross_expected_return": 0.07316,
+      "annual_cost_drag": 0.005,
+      "net_expected_return": 0.06816,
+      "annual_volatility": 0.074496,
+      "reserve_eligible_weight": 0.5
+    }
+  },
+  "constraint_stress": {
+    "reserve_minimum": 0.7,
+    "result": "No feasible long-only mix meets both the 6.5% objective and a 70% reserve minimum. Process stop.",
+    "weights": null
+  }
+}

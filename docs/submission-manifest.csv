@@ -1,0 +1,11 @@
+item,required,location_or_url,title,duration_or_as_of,timestamp_index,access_checked,frozen_or_commit_id,notes
+Repository,yes,https://github.com/Loganritter1/Project-2,Project 2 repository,2026-11-17,,,3116ea7,Confirm instructional-team access before submission
+Visible executed output,yes,https://github.com/Loganritter1/Project-2/blob/main/output/visible-output.md,Visible executed output,2026-11-17,,,Pending final commit,Regenerate with python run_validation.py before final submission
+Decision memo,yes,https://github.com/Loganritter1/Project-2/blob/main/docs/decision-memo.md,Meridian Foundation Reserve Decision Memo,2026-11-17,,,Pending final commit,Attach the same Markdown file in Brightspace
+Validation and AI use,yes,https://github.com/Loganritter1/Project-2/blob/main/docs/validation-and-ai-use.md,Validation and AI Use,2026-11-17,,,Pending final commit,Contains Locked Changed-Input Record
+Video 1,yes,TO ADD AFTER RECORDING,System and thinking changed,3:00 maximum,TO ADD AFTER RECORDING,Pending,TO ADD AFTER RECORDING,Use the runbook and enable captions
+Transcript Video 1,yes,TO ADD AFTER RECORDING,Corrected transcript,TO ADD AFTER RECORDING,TO ADD AFTER RECORDING,Pending,TO ADD AFTER RECORDING,Attach or link after recording
+Video 2,yes,TO ADD AFTER RECORDING,Code walkthrough,5:00 maximum,TO ADD AFTER RECORDING,Pending,TO ADD AFTER RECORDING,Use the runbook and enable captions
+Transcript Video 2,yes,TO ADD AFTER RECORDING,Corrected transcript,TO ADD AFTER RECORDING,TO ADD AFTER RECORDING,Pending,TO ADD AFTER RECORDING,Attach or link after recording
+Video 3,yes,TO ADD AFTER RECORDING,Committee presentation,5:00 maximum,TO ADD AFTER RECORDING,Pending,TO ADD AFTER RECORDING,Open with the app running live
+Transcript Video 3,yes,TO ADD AFTER RECORDING,Corrected transcript,TO ADD AFTER RECORDING,TO ADD AFTER RECORDING,Pending,TO ADD AFTER RECORDING,Attach or link after recording
