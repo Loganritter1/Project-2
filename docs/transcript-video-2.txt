@@ -1,0 +1,32 @@
+PROJECT: Meridian Portfolio Stability Decision
+VIDEO: 2 Codebase Walkthrough
+STABLE VIDEO URL: https://youtu.be/RwayiSQbVro
+TITLE: Project 2 — Code Walkthrough
+DURATION: 03:33
+REPOSITORY COMMIT/FROZEN VERSION: Final commit recorded in submission manifest
+
+[00:00] AI-use disclosure and purpose. Hi, I'm Logan, and this video explains how the submitted portfolio application produces its result and how I validated it. I used OpenAI Codex, based on GPT-5, to help explain requirements, plan and improve the app, improve Streamlit code, and improve the presentation. I reviewed the calculations, selected the inputs and process, and the analysis and decision are mine. This is for education only and is not investment advice.
+
+[00:29] Repository architecture. This is a streamlined portfolio application for the Meridian Foundation Reserve. The intended user is the CIO and the recommendation is pilot, not adopt. `app.py` is the user interface. `portfolio.py` contains the finance calculations and allocation search. `prices.csv` is the frozen market-data input. `run_validation.py` reproduces the evidence, and `tests/test_portfolio.py` protects the calculation logic.
+
+[01:00] Data flow and financial logic. The process starts with monthly adjusted-close prices for SGOV, VGIT, VCIT, and ACWI. The program calculates simple monthly returns, annualizes the average return and sample volatility, and estimates correlations.
+
+[01:16] Correlation guard. Before using the correlation table, `validate_correlations` checks that correlations are between -1 and 1 and that the table is symmetric.
+
+[01:26] Allocation search. The allocation engine tries long-only weights in 5-percentage-point increments, keeps only mixes that meet the 6.5% return objective and 3% reserve minimum, and then chooses the eligible mix with the lowest volatility.
+
+[01:39] Live application and controls. This is the live application. The sidebar contains the editable mandate controls and price-data upload option.
+
+[01:48] Transparent benchmarks. This section shows the two required transparent baselines, equal weight and inverse volatility. It also shows the 60/40 benchmark and the proposed constrained lowest-risk mix.
+
+[02:00] Verdicts and stop behavior. Each portfolio has a rule-by-rule scorecard for return, reserve eligibility, volatility, and long-only status. The app also shows a risk-return chart and stops the process if no eligible mix exists or a tested mandate rule fails.
+
+[02:17] Test evidence. These seven tests check the allocation mechanics, the known covariance answer, the base result from the committed CSV, invalid-correlation rejection, the reserve-constraint stop condition, and the direction of the locked ACWI changed-input result.
+
+[02:33] Reproducible validation run. This command reproduces the committed visible output. It calculates the 60% SGOV / 40% ACWI base case, the locked changed-input result, the 50-basis-point cost-hurdle stress, and the 70% reserve-minimum failure.
+
+[02:49] Failure condition. The reserve stress returns no feasible long-only portfolio, which is the correct process-stop behavior.
+
+[02:56] Limitation and clean-run result. The limitation is that the cost stress is a hurdle analysis rather than a live trading-cost estimate. The application also does not yet model every liquidity, issuer, and turnover rule from the broader policy. A clean GitHub clone passed the dependency check, all seven tests, the validation runner, and a Streamlit startup check. The software is reproducible, but the finance recommendation remains pilot rather than adoption because the inputs and policy terms need further validation.
+
+[03:27] Close. This completes the technical walkthrough of the submitted application and validation evidence.

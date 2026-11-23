@@ -1,0 +1,16 @@
+VIDEO 2 — CODEBASE WALKTHROUGH
+Video URL: https://youtu.be/RwayiSQbVro
+Duration: 03:33
+
+[00:00] Required AI-use disclosure, authorship boundary, and educational disclaimer
+[00:29] Repository architecture: app, calculations, frozen data, validation runner, and tests
+[01:00] Data flow: monthly adjusted-close prices, returns, annualization, and correlations
+[01:16] Correlation validation guard
+[01:26] Long-only constrained grid search and lowest-volatility selection rule
+[01:39] Live app and editable controls
+[01:48] Equal-weight, inverse-volatility, 60/40, and constrained-mix comparisons
+[02:00] Rule-by-rule scorecards, risk-return chart, and stop behavior
+[02:17] Seven automated tests and highest-risk calculation/validation checks
+[02:33] Validation runner: base case, locked change, cost stress, and reserve failure
+[02:49] No-feasible-portfolio failure condition
+[02:56] Limitation, clean-clone reproduction, and pilot-not-adopt conclusion

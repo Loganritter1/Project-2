@@ -2,7 +2,7 @@
 
 ## AI use, authorship, and boundary
 
-I used OpenAI Codex (GPT-5) on 2026-11-17 to explain course requirements, plan the application structure, improve Streamlit code, and improve the app's visual presentation. I reviewed the resulting code and calculations, selected the inputs and process, and remain responsible for the analysis and decision.
+I used OpenAI Codex (GPT-5) from 2026-11-17 through 2026-11-23 to explain course requirements, plan the application structure, improve Streamlit code, improve the app's visual presentation, and prepare submission documentation. I reviewed the resulting code and calculations, selected the inputs and process, and remain responsible for the analysis and decision.
 
 This analysis is for education only and is not investment advice.
 
@@ -48,7 +48,7 @@ Stop the process and do not recommend an allocation if no long-only portfolio ca
 - **New value:** 8.0% per year.
 - **Prediction:** Lowering ACWI's expected return from 10.87% to 8.0% will require more ACWI in the constrained mix to reach the 6.5% return objective. I expect annual portfolio volatility to increase. The recommendation may change from pilot to stop/reject if the increased volatility exceeds the 10.0% provisional limit.
 - **Prediction written on:** 11/17/2026, 1:45 PM.
-- **Pre-run commit and GitHub link:** `386943d90e312b8c32f4dca6f53724f18b03b873` — <https://github.com/Loganritter1/Project-2/blob/386943d90e312b8c32f4dca6f53724f18b03b873/validation-and-ai-use.md>
+- **Pre-run commit and GitHub link:** `386943d90e312b8c32f4dca6f53724f18b03b873` — <https://github.com/Loganritter1/Project-2/blob/386943d90e312b8c32f4dca6f53724f18b03b873/docs/validation-and-ai-use.md>
 
 ### Post-run result — complete only after the pre-run commit
 

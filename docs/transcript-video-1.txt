@@ -1,0 +1,62 @@
+PROJECT: Meridian Portfolio Stability Decision
+VIDEO: 1 Research Evolution and AI Output Check
+STABLE VIDEO URL: https://youtu.be/9__EBhFYibU
+TITLE: Video 1 Project 2
+DURATION: 02:58
+REPOSITORY COMMIT/FROZEN VERSION: Final commit recorded in submission manifest
+
+CORRECTED TRANSCRIPT AND TIMESTAMP INDEX
+
+0:00 — On-screen AI-use, authorship, and education disclaimer
+The opening screen displays the AI-use/authorship statement and the education-only, not-investment-advice disclaimer. The following spoken content begins at the same time.
+
+0:00 — Decision user, recommendation, objective, constraints, horizon, and rebalancing convention
+I am analyzing a constrained portfolio process for the Meridian Foundation
+Reserve CIO. My recommendation is pilot, not adopt. The process selects the
+lowest-volatility long-only mix that meets a 6.5% expected-return objective
+and a 3% reserve-eligible minimum, subject to a provisional 10% volatility
+limit. The decision is for the reserves' seven-year horizon and annual
+rebalancing convention.
+
+0:24 — Full-history base case and mandate verdict
+In the full-history base case, the model selects 60% SGOV and 40% ACWI. It has
+a 6.61% expected return, 5.99% annual volatility, and 60% reserve-eligible
+allocation. It passes the currently tested return, reserve, long-only, and
+volatility rules.
+
+0:52 — Locked changed-input result
+The key issue is stability. For my locked changed-input test, I lowered ACWI's
+expected annual return from 10.87% to 8.0%. The recommended mix changed to 35%
+SGOV and 65% ACWI. Expected return became 6.52%, while annual volatility
+increased to 9.65%.
+
+1:14 — Stability judgment and why the recommendation remains a pilot
+My prediction was directionally correct. ACWI weight and volatility both
+increased. The volatility limit was not breached, so the recommendation remains
+pilot rather than reject. But the 25-percentage-point allocation change is too
+large to justify adoption.
+
+1:32 — AI-assisted implementation checks
+I also checked an AI-assisted implementation claim. The first test temporarily
+makes one correlation-table entry asymmetric and expects the system to raise a
+ValueError instead of silently calculating a covariance matrix. The second test
+checks a known covariance answer: 0.80 times 7% times 6% equals 0.00336.
+
+1:56 — What the tests prove and do not prove
+The test suite passed. This confirms that the application rejects the
+intentionally invalid correlation table and reproduces the known covariance
+answer. These checks support the calculation mechanics. They do not prove that
+the return forecasts are correct.
+
+2:13 — Point-in-time data boundary and historical-estimate limitation
+The return signal uses frozen Yahoo Finance monthly adjusted-close data. It is a
+trailing historical estimate, not a forecast. The file contains SGOV, VGIT,
+VCIT, and ACWI prices from October 2021 through October 2026.
+
+2:31 — Pilot recommendation, stop conditions, and adoption requirements
+The appropriate action is a non-funded pilot, not adoption. The process should
+stop if no long-only portfolio can meet the return and reserve requirements, if
+a tested mandate rule fails, or if cost and constraint evidence changes the
+recommendation. Adoption would require documented implementation costs and final
+treatment of liquidity, issuer, and turnover rules. That is why I recommend
+pilot, not adopt.

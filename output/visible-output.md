@@ -1,7 +1,7 @@
 # Visible Executed Output
 
 **Run command:** `python run_validation.py`
-**Run date:** 2026-11-17
+**Run date:** 2026-11-23
 **Data boundary:** Yahoo Finance monthly adjusted-close data downloaded 2026-10-22; price history through 2026-10.
 **Decision:** Pilot, not adopt.
 
@@ -29,7 +29,7 @@ The prediction that ACWI weight and volatility would increase was correct. The r
 | Stress | Result | Decision implication |
 |---|---|---|
 | 50 bps annual cost drag | A gross 7.00% return target produces 50% SGOV / 50% ACWI; gross return 7.32%, net return 6.82%, volatility 7.45%. | Costs make the process depend on a higher gross-return hurdle. |
-| 70% reserve minimum | No feasible long-only mix reaches the 6.5% objective. | Process stop; do not recommend an allocation. |
-| Last 36 months rather than full history | 85% SGOV / 15% ACWI, versus 60% / 40% in the full-history base case. | A 25-point change supports pilot rather than adoption. |
+| 70% reserve minimum | No feasible long-only mix meets both the 6.5% objective and a 70% reserve minimum. Process stop. | Process stop; do not recommend an allocation. |
+| Last 36 months rather than full history | 85% SGOV / 15% ACWI, versus 60% SGOV / 40% ACWI in the full-history base case. | A 25-point change supports pilot rather than adoption. |
 
 The machine-readable source of these results is [validation-results.json](validation-results.json).

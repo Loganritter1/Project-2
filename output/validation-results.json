@@ -68,5 +68,18 @@
     "reserve_minimum": 0.7,
     "result": "No feasible long-only mix meets both the 6.5% objective and a 70% reserve minimum. Process stop.",
     "weights": null
+  },
+  "window_stress": {
+    "weights": {
+      "SGOV": 0.85,
+      "VGIT": 0.0,
+      "VCIT": 0.0,
+      "ACWI": 0.15
+    },
+    "gross_expected_return": 0.068714,
+    "annual_cost_drag": 0.0,
+    "net_expected_return": 0.068714,
+    "annual_volatility": 0.017551,
+    "reserve_eligible_weight": 0.85
   }
 }

@@ -1,0 +1,14 @@
+VIDEO 3 — COMMITTEE PRESENTATION
+Video URL: https://youtu.be/eaCGOtweKmE
+Duration: 03:44
+
+[00:00] Opening recommendation, AI-use disclosure, authorship boundary, and education disclaimer
+[00:23] Non-funded-pilot committee ask, mandate, and decision scope
+[00:56] Base case: 60% SGOV / 40% ACWI; 6.61% return; 5.99% volatility; 60% reserve eligible
+[01:14] Equal-weight, inverse-volatility, and 60/40 transparent benchmarks
+[01:29] Locked changed-input result: ACWI 10.87% to 8.0%; mix shifts to 35% SGOV / 65% ACWI
+[02:01] 25-point allocation change and pilot-not-adopt judgment
+[02:16] 50-basis-point cost stress, 70% reserve failure, and correct process-stop behavior
+[02:52] Monitoring metrics and reversal triggers
+[03:20] Final committee ask and adoption conditions
+[03:33] Pilot-not-adopt conclusion

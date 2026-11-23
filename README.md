@@ -45,9 +45,12 @@ The committed result, stress test, data sources, and decision rationale are in [
 - `lab13 files/lab15.md` - visible results, stress tests, source links, and the final decision rationale.
 - `lab13 files/mandate.py` and `lab13 files/lab13.md` - the earlier coded mandate rules and their documentation.
 - `run_validation.py` - reproducible base, changed-input, cost, and constraint stress runs.
-- `tests/test_portfolio.py` - six regression tests for calculation, validation, and stop behavior.
+- `tests/test_portfolio.py` - seven regression tests for calculation, validation, and stop behavior.
 - `docs/decision-memo.md` - committee decision memo.
 - `docs/validation-and-ai-use.md` - validation record, AI disclosure, and Locked Changed-Input Record.
+- `docs/data-card.md` and `docs/cold-run-record.md` - data lineage and clean-user reproducibility evidence.
+- `docs/submission-manifest.csv` and `docs/submission-guide.md` - required submission links and final-submission instructions.
+- `docs/transcript-video-1.txt`, `docs/transcript-video-2.txt`, and `docs/transcript-video-3.txt` - corrected video transcripts with timestamp indices.
 
 ## Input and decision boundary
 

@@ -1,0 +1,28 @@
+PROJECT: Meridian Portfolio Stability Decision
+VIDEO: 3 Committee Presentation
+STABLE VIDEO URL: https://youtu.be/eaCGOtweKmE
+TITLE: Project 2 — Committee Decision
+DURATION: 03:44
+REPOSITORY COMMIT/FROZEN VERSION: Final commit recorded in submission manifest
+
+[00:00] Opening recommendation, AI-use disclosure, and education disclaimer. Hi, I'm Logan. My recommendation is pilot, not adopt. I used OpenAI Codex, based on GPT-5, to help explain requirements, plan and improve the app, improve Streamlit code, and improve the presentation. I reviewed the calculations, selected the inputs and process, and the analysis and decision are mine. This is for education only and is not investment advice.
+
+[00:23] Committee decision and scope. I recommend that the Meridian Foundation Reserve CIO approve a non-funded pilot of this constrained portfolio process. I am not recommending that the committee invest live capital today. The pilot would validate return estimates, implementation costs, and the remaining policy rules before any adoption decision. The process is long-only and currently tests a 6.5% expected-return objective, a 3% reserve-eligible minimum, and a provisional 10% volatility limit.
+
+[00:56] Base case. In the full-history base case, the proposed constrained mix is 60% SGOV and 40% ACWI. It has a 6.61% expected return, 5.99% annual volatility, and 60% reserve-eligible allocation. It passes the currently tested rules.
+
+[01:14] Transparent baselines. The app also displays equal weight and inverse volatility as transparent baselines, plus the 60/40 benchmark. This lets the committee compare the proposed result to simple, reproducible alternatives instead of treating it as a black box.
+
+[01:29] Why not adopt: locked changed input. I do not recommend adoption because the allocation is sensitive to its expected-return inputs. In the locked changed-input test, I lowered ACWI's expected return from 10.87% to 8.0%. The allocation changed from 60% SGOV / 40% ACWI to 35% SGOV / 65% ACWI. Expected return became 6.52% and volatility increased from 5.99% to 9.65%.
+
+[02:01] Judgment on stability. The changed portfolio still passed the 10% volatility limit, so the recommendation did not change to reject. But the 25-percentage-point allocation shift is too large to treat the base allocation as stable enough for live adoption.
+
+[02:16] Cost and constraint failure conditions. With a 50-basis-point annual cost drag, the process needs a higher gross-return hurdle and the selected mix changes to 50% SGOV / 50% ACWI. This is a hurdle stress, not an estimate of actual trading costs. If the reserve minimum is raised to 70%, no long-only portfolio can meet the 6.5% return objective. The application correctly stops the process instead of forcing an ineligible allocation.
+
+[02:52] Monitoring and reversal triggers. For the pilot, I would monitor allocation changes, expected return, annual volatility, reserve-eligible weight, and each mandate verdict whenever the data window, return estimate, reserve rule, or cost assumption changes. I would stop or reverse the pilot if no long-only mix meets the return and reserve requirements, if a tested mandate rule fails, or if real implementation cost makes the process infeasible.
+
+[03:20] Committee ask and adoption conditions. My committee ask is approval for a non-funded pilot only. Adoption requires documented live-cost evidence and final policy treatment of liquidity, issuer, and turnover constraints.
+
+[03:33] Close. The evidence supports testing this process further, but not funding it yet. My recommendation is pilot, not adopt. Thank you.
+
+END OF CORRECTED TRANSCRIPT
